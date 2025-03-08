@@ -1,12 +1,12 @@
 <!DOCTYPE HTML>
 <title>Weatherscan</title>
-<p>You are being redirected, please wait..</p>
+<p id="mess">You are being redirected, please wait..</p>
 <script>
   var params = window.location.search;
   var url = "https://flybot2010-lab.github.io/weatherscan_plus/";
   
   if (params === "") {
-    document.getElementById("message").innerHTML = "Please supply a location. I.E weatherscan.plusnetwork.live?Rockford";
+    document.getElementById("mess").innerHTML = "Please supply a location. I.E weatherscan.plusnetwork.live?Rockford";
   } else {
     window.location.href = baseUrl + params;
   }
