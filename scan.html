@@ -5,6 +5,9 @@
   var params = window.location.search;
   var url = "https://flybot2010-lab.github.io/weatherscan_plus/";
   
-  // Redirect to the new URL with the current parameters
-  // window.location.href = url + params;
+  if (params === "") {
+    document.getElementById("message").innerHTML = "Please supply a location. I.E weatherscan.plusnetwork.live?Rockford";
+  } else {
+    window.location.href = baseUrl + params;
+  }
 </script>
